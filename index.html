@@ -34,7 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body.lang-sc { font-family: 'Source Serif 4', 'Noto Serif SC', serif; }
- 
+
 /* LANG */
 [data-lang] { display: none; }
 body.lang-en [data-lang="en"] { display: revert; }
@@ -44,7 +44,7 @@ span[data-lang] { display: none; }
 body.lang-en span[data-lang="en"] { display: inline; }
 body.lang-hk span[data-lang="hk"] { display: inline; }
 body.lang-sc span[data-lang="sc"] { display: inline; }
- 
+
 /* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 400;
@@ -79,11 +79,11 @@ nav {
 .lb:hover { background: var(--blue-lt); color: var(--blue); }
 .lb.active { background: var(--blue); color: #fff; }
 @media(max-width:860px){ .nav-links { display: none; } }
- 
+
 /* PAGES */
 .page { display: none; }
 .page.active { display: block; }
- 
+
 /* PHOTO */
 .ps { position: relative; overflow: hidden; background: var(--cream-d); }
 .ps img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .7s; }
@@ -92,7 +92,7 @@ nav {
 @keyframes spin { to { transform: rotate(360deg); } }
 .ps.rdy .spin { display: none; }
 .ps img.rdy { opacity: 1 !important; }
- 
+
 /* ANIM */
 @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:none; } }
 .fade-up { animation: fadeUp .8s ease both; }
@@ -100,11 +100,11 @@ nav {
 .fade-up.d2 { animation-delay:.22s; }
 .fade-up.d3 { animation-delay:.34s; }
 .fade-up.d4 { animation-delay:.46s; }
- 
+
 /* ══════════════════════════════════════════
    HOME
 ══════════════════════════════════════════ */
- 
+
 /* HERO */
 .hero {
   position: relative; height: 100vh; min-height: 640px;
@@ -149,7 +149,7 @@ nav {
   font-size: 15px; font-weight: 400; cursor: pointer; transition: all .22s;
 }
 .btn-ghost:hover { border-color: rgba(255,255,255,.7); }
- 
+
 /* PROOF STRIP */
 .proof-strip {
   background: var(--blue); padding: 22px 7%;
@@ -162,7 +162,7 @@ nav {
 .proof-item:last-child { border-right: none; }
 .proof-n { font-family: var(--fd); font-size: 32px; color: #fff; line-height: 1; }
 .proof-l { font-size: 11px; color: rgba(255,255,255,.55); margin-top: 4px; font-weight: 300; letter-spacing: .04em; }
- 
+
 /* HOW IT WORKS */
 .hiw { padding: 100px 7%; background: var(--cream); }
 .hiw-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 56px; margin-top: 56px; position: relative; }
@@ -180,7 +180,7 @@ nav {
 .hiw-title { font-family: var(--fd); font-size: 20px; color: var(--ink); margin-bottom: 12px; }
 .hiw-title-zh { font-family: var(--fd); font-size: 18px; color: var(--ink); margin-bottom: 12px; }
 .hiw-desc { font-size: 14.5px; color: var(--mid); line-height: 1.78; font-weight: 300; }
- 
+
 /* PROBLEMS GRID */
 .problems { padding: 100px 7%; background: var(--warm); }
 .prob-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 3px; margin-top: 52px; border-radius: 16px; overflow: hidden; }
@@ -198,7 +198,7 @@ nav {
 .prob-title { font-family: var(--fd); font-size: 15px; color: var(--ink); margin-bottom: 6px; line-height: 1.35; }
 .prob-title-zh { font-family: var(--fd); font-size: 14px; color: var(--ink); margin-bottom: 6px; line-height: 1.4; }
 .prob-arrow { font-size: 12px; color: var(--blue); margin-top: 10px; font-weight: 500; }
- 
+
 /* STORIES PREVIEW */
 .stories-preview { padding: 100px 7%; background: var(--cream); }
 .stories-carousel { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
@@ -223,7 +223,7 @@ nav {
   transition: border-color .2s; width: fit-content;
 }
 .story-read:hover { border-color: var(--blue); }
- 
+
 /* LIFE STAGES */
 .stages { padding: 100px 0; background: var(--warm); }
 .stages-inner { padding: 0 7%; }
@@ -257,7 +257,7 @@ nav {
   font-family: var(--fb);
 }
 .stage-btn:hover { background: rgba(255,255,255,.28); }
- 
+
 /* PARTNERS */
 .partners { padding: 64px 7%; background: var(--cream); border-top: 1px solid var(--border); }
 .partner-label { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); text-align: center; margin-bottom: 32px; }
@@ -267,7 +267,7 @@ nav {
   padding: 10px 24px; font-family: var(--fd); font-size: 14px; font-weight: 500;
   color: var(--mid); white-space: nowrap;
 }
- 
+
 /* STORY SECTION FULL-BLEED */
 .story-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
 .story-photo-side { position: relative; overflow: hidden; }
@@ -288,7 +288,7 @@ nav {
   transition: border-color .2s; text-decoration: none;
 }
 .story-link-btn:hover { border-color: rgba(255,255,255,.7); }
- 
+
 /* HOME CTA */
 .home-cta { position: relative; overflow: hidden; }
 .home-cta .ps { height: 420px; }
@@ -313,7 +313,7 @@ nav {
   cursor: pointer; font-family: var(--fb); transition: all .2s;
 }
 .btn-outline-w:hover { border-color: rgba(255,255,255,.7); }
- 
+
 /* ══════════════════════════════════════════
    SERVICES PAGE
 ══════════════════════════════════════════ */
@@ -324,7 +324,7 @@ nav {
 .ph-eyebrow { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); font-weight: 600; margin-bottom: 14px; }
 .ph-title { font-family: var(--fd); font-size: clamp(28px,3.5vw,48px); color: #fff; line-height: 1.2; }
 .ph-title-zh { font-family: var(--fd); font-size: clamp(22px,2.8vw,38px); color: #fff; font-weight: 300; line-height: 1.3; }
- 
+
 .svc-body { padding: 80px 7%; background: var(--cream); }
 .cat-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 44px; }
 .cat-tab {
@@ -354,7 +354,7 @@ nav {
 .badge-new { background: #E8F5E9; color: #2E7D32; }
 .badge-pilot { background: #F3E5F5; color: #6A1B9A; }
 .badge-soon { background: var(--blue-lt); color: var(--blue); }
- 
+
 /* ══════════════════════════════════════════
    HOW WE HELP PAGE
 ══════════════════════════════════════════ */
@@ -376,13 +376,13 @@ nav {
 .how-card-title-zh { font-family: var(--fd); font-size: 15px; color: var(--ink); margin-bottom: 8px; line-height: 1.4; }
 .how-card-desc { font-size: 13.5px; color: var(--mid); line-height: 1.68; font-weight: 300; }
 .how-card-link { font-size: 12.5px; color: var(--blue); margin-top: 14px; display: block; font-weight: 500; }
- 
+
 /* ══════════════════════════════════════════
    STORIES PAGE
 ══════════════════════════════════════════ */
 .stories-body { padding: 80px 7%; background: var(--cream); }
 .stories-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-top: 0; }
- 
+
 /* INDIVIDUAL STORY */
 .story-article { padding: 80px 7% 100px; background: var(--cream); max-width: 860px; margin: 0 auto; }
 .story-back { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--blue); cursor: pointer; margin-bottom: 36px; font-weight: 500; }
@@ -393,7 +393,7 @@ nav {
 .story-article p { font-size: 16.5px; color: var(--text); line-height: 1.9; font-weight: 300; margin-bottom: 22px; }
 .story-article h3 { font-family: var(--fd); font-size: 20px; color: var(--ink); margin: 36px 0 16px; line-height: 1.3; }
 .story-disclaimer { font-size: 13px; color: var(--mid); font-style: italic; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-weight: 300; }
- 
+
 /* ══════════════════════════════════════════
    ABOUT PAGE
 ══════════════════════════════════════════ */
@@ -415,7 +415,7 @@ nav {
 .nb:last-child { border-right: none; }
 .nb-n { font-family: var(--fd); font-size: 36px; color: #fff; line-height: 1; }
 .nb-l { font-size: 11px; color: rgba(255,255,255,.55); margin-top: 5px; font-weight: 300; }
- 
+
 /* ══════════════════════════════════════════
    FOR YOUR FAMILY PAGE
 ══════════════════════════════════════════ */
@@ -433,7 +433,7 @@ nav {
 .fstat-n { font-family: var(--fd); font-size: clamp(56px,7vw,96px); color: var(--white); line-height: 1; }
 .fstat-unit { font-family: var(--fd); font-size: clamp(28px,3.5vw,48px); color: rgba(255,255,255,.5); font-style: italic; margin-left: 6px; }
 .fstat-desc { font-size: 16px; color: rgba(255,255,255,.6); margin-top: 12px; font-weight: 300; max-width: 480px; margin-left: auto; margin-right: auto; }
- 
+
 /* ══════════════════════════════════════════
    CROSS-BORDER PAGE
 ══════════════════════════════════════════ */
@@ -461,7 +461,7 @@ nav {
 .strip-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px 14px; }
 .strip-t { font-family: var(--fd); font-size: 14px; color: #fff; font-weight: 500; margin-bottom: 2px; }
 .strip-tz { font-family: var(--fd); font-size: 13px; color: rgba(255,255,255,.75); font-weight: 400; }
- 
+
 /* ══════════════════════════════════════════
    CONTACT PAGE
 ══════════════════════════════════════════ */
@@ -493,7 +493,7 @@ nav {
   font-family: var(--fb); transition: background .2s, transform .2s;
 }
 .fsub:hover { background: var(--ink); transform: translateY(-1px); }
- 
+
 /* ══════════════════════════════════════════
    FOOTER
 ══════════════════════════════════════════ */
@@ -506,7 +506,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
 .fcol a:hover { color: rgba(255,255,255,.82); }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
 .footer-copy { font-size: 11.5px; color: rgba(255,255,255,.22); font-weight: 300; font-family: var(--fb); }
- 
+
 /* SHARED SECTION HEADERS */
 .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
 .sec-h { font-family: var(--fd); font-size: clamp(26px,3vw,42px); color: var(--ink); line-height: 1.22; margin-bottom: 10px; }
@@ -520,7 +520,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   transition: all .2s; text-decoration: none; margin-top: 28px;
 }
 .btn-blue:hover { background: var(--ink); transform: translateY(-2px); }
- 
+
 /* RESPONSIVE */
 @media(max-width:1000px){
   .footer-top { grid-template-columns: 1fr 1fr; }
@@ -556,7 +556,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   .proof-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.12); max-width: 100%; width: 100%; }
   .footer-top { grid-template-columns: 1fr; }
 }
- 
+
 /* ══════════════════════════════════════════
    PROCESS / TIMELINE PAGE
 ══════════════════════════════════════════ */
@@ -565,7 +565,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
 .process-intro .eyebrow { justify-content: center; display: flex; }
 .process-intro .sec-h { margin-top: 10px; }
 .process-intro .sec-sub { margin: 14px auto 0; text-align: center; }
- 
+
 /* Timeline rail */
 .timeline { max-width: 860px; margin: 0 auto; position: relative; }
 .timeline::before {
@@ -573,14 +573,14 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   left: 56px; top: 0; bottom: 0; width: 2px;
   background: linear-gradient(to bottom, var(--blue-lt) 0%, var(--blue) 30%, var(--blue) 70%, var(--blue-lt) 100%);
 }
- 
+
 /* Individual step */
 .tl-step {
   display: flex; gap: 0; align-items: flex-start;
   margin-bottom: 0; position: relative;
 }
 .tl-step:last-child .tl-connector { display: none; }
- 
+
 /* Number node */
 .tl-node {
   flex-shrink: 0; width: 114px;
@@ -599,7 +599,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   transform: scale(1.1);
   box-shadow: 0 0 0 6px var(--cream), 0 0 0 10px var(--blue);
 }
- 
+
 /* Step card */
 .tl-card {
   flex: 1; background: var(--white);
@@ -620,7 +620,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   transform: translateX(4px);
 }
 .tl-step:hover .tl-card::before { transform: scaleY(1); }
- 
+
 .tl-tag {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
@@ -643,7 +643,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   width: 6px; height: 6px; border-radius: 50%; background: var(--blue);
   flex-shrink: 0; margin-top: 7px;
 }
- 
+
 /* Icon accent top-right of card */
 .tl-icon {
   position: absolute; top: 28px; right: 32px;
@@ -651,10 +651,10 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
   transition: opacity .3s;
 }
 .tl-step:hover .tl-icon { opacity: .22; }
- 
+
 /* Connector dot between cards */
 .tl-gap { height: 0; }
- 
+
 /* Ongoing support band */
 .ongoing-band {
   background: var(--ink); padding: 72px 7%;
@@ -673,7 +673,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
 .ongoing-card-title { font-family: var(--fd); font-size: 17px; color: #fff; margin-bottom: 4px; line-height: 1.3; }
 .ongoing-card-title-zh { font-family: var(--fd); font-size: 15px; color: rgba(255,255,255,.75); font-weight: 400; line-height: 1.4; margin-bottom: 10px; }
 .ongoing-card-desc { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.72; font-weight: 300; }
- 
+
 /* Promise strip */
 .promise-strip { padding: 80px 7%; background: var(--warm); }
 .promise-inner { max-width: 1100px; margin: 0 auto; }
@@ -684,7 +684,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
 .promise-col-h { font-family: var(--fd); font-size: 18px; color: var(--ink); margin-bottom: 4px; }
 .promise-col-hz { font-family: var(--fd); font-size: 16px; color: var(--blue); margin-bottom: 12px; font-weight: 400; }
 .promise-col-p { font-size: 13.5px; color: var(--mid); line-height: 1.72; font-weight: 300; }
- 
+
 @media(max-width:860px){
   .timeline::before { left: 27px; }
   .tl-node { width: 64px; padding-top: 28px; }
@@ -702,7 +702,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
 </style>
 </head>
 <body class="lang-hk">
- 
+
 <!-- ════════════════ NAV ════════════════ -->
 <nav>
   <a class="nav-logo" onclick="showPage('home')">
@@ -734,13 +734,13 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     </div>
   </div>
 </nav>
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: HOME
 ════════════════════════════════════════ -->
 <div class="page active" id="page-home">
- 
+
   <!-- HERO -->
   <section class="hero">
     <div class="ps" style="position:absolute;inset:0;height:100%" id="ph-hero">
@@ -773,7 +773,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </section>
- 
+
   <!-- PROOF -->
   <div class="proof-strip">
     <div class="proof-item"><div class="proof-n">80+</div><div class="proof-l" data-lang="en">Partner Doctors</div><div class="proof-l" data-lang="hk">合作醫生</div><div class="proof-l" data-lang="sc">合作医生</div></div>
@@ -781,7 +781,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     <div class="proof-item"><div class="proof-n">3</div><div class="proof-l" data-lang="en">Regions</div><div class="proof-l" data-lang="hk">覆蓋地區</div><div class="proof-l" data-lang="sc">覆盖地区</div></div>
     <div class="proof-item"><div class="proof-n">GBA</div><div class="proof-l" data-lang="en">Cross-Border</div><div class="proof-l" data-lang="hk">跨境覆蓋</div><div class="proof-l" data-lang="sc">跨境覆盖</div></div>
   </div>
- 
+
   <!-- HOW IT WORKS -->
   <section class="hiw">
     <div style="max-width:1100px;margin:0 auto">
@@ -827,7 +827,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </section>
- 
+
   <!-- CLIENT STORIES PREVIEW -->
   <section class="stories-preview">
     <div style="max-width:1100px;margin:0 auto">
@@ -845,7 +845,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
         </button>
       </div>
       <div class="stories-carousel" style="margin-top:44px">
- 
+
         <div class="story-card" onclick="showStory('mrs-chan')">
           <div class="story-card-photo">
             <div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
@@ -861,7 +861,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <span class="story-read"><span data-lang="en">Read her story →</span><span data-lang="hk">閱讀她的故事 →</span><span data-lang="sc">阅读她的故事 →</span></span>
           </div>
         </div>
- 
+
         <div class="story-card" onclick="showStory('mr-wong')">
           <div class="story-card-photo">
             <div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
@@ -877,7 +877,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <span class="story-read"><span data-lang="en">Read his story →</span><span data-lang="hk">閱讀他的故事 →</span><span data-lang="sc">阅读他的故事 →</span></span>
           </div>
         </div>
- 
+
         <div class="story-card" onclick="showStory('the-lam-family')">
           <div class="story-card-photo">
             <div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
@@ -893,11 +893,11 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <span class="story-read"><span data-lang="en">Read their story →</span><span data-lang="hk">閱讀他們的故事 →</span><span data-lang="sc">阅读他们的故事 →</span></span>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
+
   <!-- LIFE STAGES -->
   <section class="stages">
     <div class="stages-inner">
@@ -912,7 +912,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     </div>
     <div style="padding:40px 7% 0">
       <div class="stages-grid">
- 
+
         <div class="stage-card" onclick="filterStage('children',this)">
           <div class="stage-bg" id="sbg-1"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:100%;object-fit:cover" onload="imgLoaded(this,'sbg-1')"></div>
           <div class="stage-ov"></div>
@@ -931,7 +931,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <button class="stage-btn"><span data-lang="en">View Services →</span><span data-lang="hk">查看服務 →</span><span data-lang="sc">查看服务 →</span></button>
           </div>
         </div>
- 
+
         <div class="stage-card" onclick="filterStage('prime',this)">
           <div class="stage-bg" id="sbg-2"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#E65100" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:100%;object-fit:cover" onload="imgLoaded(this,'sbg-2')"></div>
           <div class="stage-ov"></div>
@@ -950,7 +950,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <button class="stage-btn"><span data-lang="en">View Services →</span><span data-lang="hk">查看服務 →</span><span data-lang="sc">查看服务 →</span></button>
           </div>
         </div>
- 
+
         <div class="stage-card" onclick="filterStage('mature',this)">
           <div class="stage-bg" id="sbg-3"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#6A1B9A" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1609220136736-443140cfeaa5?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:100%;object-fit:cover" onload="imgLoaded(this,'sbg-3')"></div>
           <div class="stage-ov"></div>
@@ -969,7 +969,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <button class="stage-btn"><span data-lang="en">View Services →</span><span data-lang="hk">查看服務 →</span><span data-lang="sc">查看服务 →</span></button>
           </div>
         </div>
- 
+
         <div class="stage-card" onclick="filterStage('golden',this)">
           <div class="stage-bg" id="sbg-4"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#BF360C" stroke-width="2" width="24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:100%;object-fit:cover" onload="imgLoaded(this,'sbg-4')"></div>
           <div class="stage-ov"></div>
@@ -988,11 +988,11 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <button class="stage-btn"><span data-lang="en">View Services →</span><span data-lang="hk">查看服務 →</span><span data-lang="sc">查看服务 →</span></button>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
+
   <!-- PARTNER LOGOS -->
   <section class="partners">
     <div class="partner-label" data-lang="en">TRUSTED PARTNERS</div>
@@ -1006,7 +1006,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       <span class="partner-pill">藥械通</span>
     </div>
   </section>
- 
+
   <!-- STORY SPLIT -->
   <div class="story-split">
     <div class="story-photo-side">
@@ -1032,7 +1032,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </div>
- 
+
   <!-- HOME CTA -->
   <div class="home-cta">
     <div class="ps" id="ph-hcta">
@@ -1055,15 +1055,15 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </div>
- 
+
 </div><!-- /home -->
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: OUR PROCESS (TIMELINE)
 ════════════════════════════════════════ -->
 <div class="page" id="page-how">
- 
+
   <!-- HERO -->
   <div class="page-hero">
     <div class="ps" id="ph-how">
@@ -1080,7 +1080,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       <div class="ph-title-zh" data-lang="sc">六个步骤，一位同行者，<br>整段旅程，我们陪您走完。</div>
     </div>
   </div>
- 
+
   <!-- INTRO -->
   <div class="process-body">
     <div class="process-intro">
@@ -1094,10 +1094,10 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       <p class="sec-sub" data-lang="hk">從您第一次聯繫我們，到治療完成之後，您的專屬醫療導航員全程統籌一切，讓您專注於康復。</p>
       <p class="sec-sub" data-lang="sc">从您第一次联系我们，到治疗完成之后，您的专属医疗导航员全程统筹一切，让您专注于康复。</p>
     </div>
- 
+
     <!-- TIMELINE -->
     <div class="timeline">
- 
+
       <!-- STEP 1 -->
       <div class="tl-step">
         <div class="tl-node">
@@ -1121,7 +1121,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           </div>
         </div>
       </div>
- 
+
       <!-- STEP 2 -->
       <div class="tl-step">
         <div class="tl-node">
@@ -1146,7 +1146,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           </div>
         </div>
       </div>
- 
+
       <!-- STEP 3 -->
       <div class="tl-step">
         <div class="tl-node">
@@ -1171,7 +1171,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           </div>
         </div>
       </div>
- 
+
       <!-- STEP 4 -->
       <div class="tl-step">
         <div class="tl-node">
@@ -1196,7 +1196,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           </div>
         </div>
       </div>
- 
+
       <!-- STEP 5 -->
       <div class="tl-step">
         <div class="tl-node">
@@ -1220,7 +1220,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           </div>
         </div>
       </div>
- 
+
       <!-- STEP 6 -->
       <div class="tl-step">
         <div class="tl-node">
@@ -1247,10 +1247,10 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           </div>
         </div>
       </div>
- 
+
     </div><!-- /timeline -->
   </div><!-- /process-body -->
- 
+
   <!-- ONGOING SUPPORT DETAIL -->
   <div class="ongoing-band">
     <div class="ongoing-inner">
@@ -1264,7 +1264,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       <p style="font-size:15px;color:rgba(255,255,255,.55);font-weight:300;line-height:1.78;max-width:560px" data-lang="hk">大多數醫療服務在就診結束時停止。恩諾全護不同。您的導航員在整個醫療旅程中始終是您的聯絡人。</p>
       <p style="font-size:15px;color:rgba(255,255,255,.55);font-weight:300;line-height:1.78;max-width:560px" data-lang="sc">大多数医疗服务在就诊结束时停止。恩诺全护不同。您的导航员在整个医疗旅程中始终是您的联络人。</p>
       <div class="ongoing-grid">
- 
+
         <div class="ongoing-card">
           <span class="ongoing-card-icon">🗂</span>
           <div class="ongoing-card-title" data-lang="en">Medical Records</div>
@@ -1274,7 +1274,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           <p class="ongoing-card-desc" data-lang="hk">所有報告、化驗結果、出院總結及專科信件，整理有序，隨時可取。</p>
           <p class="ongoing-card-desc" data-lang="sc">所有报告、化验结果、出院总结及专科信件，整理有序，随时可取。</p>
         </div>
- 
+
         <div class="ongoing-card">
           <span class="ongoing-card-icon">💊</span>
           <div class="ongoing-card-title" data-lang="en">Medication Records</div>
@@ -1284,7 +1284,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           <p class="ongoing-card-desc" data-lang="hk">現有藥物、劑量、相互作用檢查及補藥提醒——確保不遺漏、不重複。</p>
           <p class="ongoing-card-desc" data-lang="sc">现有药物、剂量、相互作用检查及补药提醒——确保不遗漏、不重复。</p>
         </div>
- 
+
         <div class="ongoing-card">
           <span class="ongoing-card-icon">🗓</span>
           <div class="ongoing-card-title" data-lang="en">Appointments & Reminders</div>
@@ -1294,7 +1294,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           <p class="ongoing-card-desc" data-lang="hk">主動預約複診，每次就診前發送提醒，讓您不錯過任何關鍵步驟。</p>
           <p class="ongoing-card-desc" data-lang="sc">主动预约复诊，每次就诊前发送提醒，让您不错过任何关键步骤。</p>
         </div>
- 
+
         <div class="ongoing-card">
           <span class="ongoing-card-icon">🧠</span>
           <div class="ongoing-card-title" data-lang="en">Ongoing Medical Advice</div>
@@ -1304,7 +1304,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           <p class="ongoing-card-desc" data-lang="hk">就診間隙即時解答問題。導航員解釋結果、提供後續建議，並提示任何需要注意的事項。</p>
           <p class="ongoing-card-desc" data-lang="sc">就诊间隙即时解答问题。导航员解释结果、提供后续建议，并提示任何需要注意的事项。</p>
         </div>
- 
+
         <div class="ongoing-card">
           <span class="ongoing-card-icon">🌐</span>
           <div class="ongoing-card-title" data-lang="en">Cross-Border Coordination</div>
@@ -1314,7 +1314,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           <p class="ongoing-card-desc" data-lang="hk">當醫療護理跨越港澳及內地，導航員統籌所有系統的安排——確保資訊不在邊境之間流失。</p>
           <p class="ongoing-card-desc" data-lang="sc">当医疗护理跨越港澳及内地，导航员统筹所有系统的安排——确保信息不在边境之间流失。</p>
         </div>
- 
+
         <div class="ongoing-card">
           <span class="ongoing-card-icon">💙</span>
           <div class="ongoing-card-title" data-lang="en">Emotional & Post-Op Care</div>
@@ -1324,11 +1324,11 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
           <p class="ongoing-card-desc" data-lang="hk">心理輔導轉介、術後護理統籌及養生湯包——因為康復不只是臨床的事。</p>
           <p class="ongoing-card-desc" data-lang="sc">心理辅导转介、术后护理统筹及养生汤包——因为康复不只是临床的事。</p>
         </div>
- 
+
       </div>
     </div>
   </div><!-- /ongoing-band -->
- 
+
   <!-- THREE PROMISES -->
   <div class="promise-strip">
     <div class="promise-inner">
@@ -1371,7 +1371,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </div><!-- /promise-strip -->
- 
+
   <!-- PAGE CTA -->
   <div style="position:relative;overflow:hidden">
     <div class="ps" id="ph-how-cta">
@@ -1394,12 +1394,12 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </div>
- 
+
 </div><!-- /how -->
- 
- 
- 
- 
+
+
+
+
 <!-- ════════════════════════════════════════
      PAGE: CLIENT STORIES (list)
 ════════════════════════════════════════ -->
@@ -1420,7 +1420,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       <p class="sec-sub" style="margin-bottom:48px" data-lang="hk">姓名已更改，圖片為示意。這些是真實的情況、真實的人和真實的結果——已獲當事人同意分享。</p>
       <p class="sec-sub" style="margin-bottom:48px" data-lang="sc">姓名已更改，图片为示意。这些是真实的情况、真实的人和真实的结果——已获当事人同意分享。</p>
       <div class="stories-grid">
- 
+
         <div class="story-card" onclick="showStory('mrs-chan')">
           <div class="story-card-photo"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="22"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1609220136736-443140cfeaa5?w=600&q=80&fit=crop" alt="" style="opacity:0" onload="imgLoaded(this)"></div>
           <div class="story-card-body">
@@ -1431,7 +1431,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <span class="story-read"><span data-lang="en">Read her story →</span><span data-lang="hk">閱讀她的故事 →</span><span data-lang="sc">阅读她的故事 →</span></span>
           </div>
         </div>
- 
+
         <div class="story-card" onclick="showStory('mr-wong')">
           <div class="story-card-photo"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="22"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80&fit=crop" alt="" style="opacity:0" onload="imgLoaded(this)"></div>
           <div class="story-card-body">
@@ -1442,7 +1442,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <span class="story-read"><span data-lang="en">Read his story →</span><span data-lang="hk">閱讀他的故事 →</span><span data-lang="sc">阅读他的故事 →</span></span>
           </div>
         </div>
- 
+
         <div class="story-card" onclick="showStory('the-lam-family')">
           <div class="story-card-photo"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="22"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80&fit=crop" alt="" style="opacity:0" onload="imgLoaded(this)"></div>
           <div class="story-card-body">
@@ -1453,21 +1453,21 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
             <span class="story-read"><span data-lang="en">Read their story →</span><span data-lang="hk">閱讀他們的故事 →</span><span data-lang="sc">阅读他们的故事 →</span></span>
           </div>
         </div>
- 
+
       </div>
     </div>
   </div>
 </div><!-- /stories -->
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: INDIVIDUAL STORY (shared template)
 ════════════════════════════════════════ -->
 <div class="page" id="page-story-detail" style="margin-top:66px">
   <div class="story-article" id="story-content"></div>
 </div>
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: SERVICES
 ════════════════════════════════════════ -->
@@ -1496,73 +1496,73 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
         <button class="cat-tab" onclick="switchCat('golden',this)"><span data-lang="en">Golden Years</span><span data-lang="hk">銀髮</span><span data-lang="sc">银发</span></button>
       </div>
       <div class="svc-grid" id="svc-grid">
- 
+
         <div class="svc-card" data-cats="screening checkup prime mature">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Screening · SC Health</div><div class="svc-cat-label" data-lang="hk">篩查 · SC Health 合作</div><div class="svc-cat-label" data-lang="sc">筛查 · SC Health 合作</div><div class="svc-title" data-lang="en">4K AI Colonoscopy</div><div class="svc-title-zh" data-lang="hk">4K AI 腸胃鏡服務</div><div class="svc-title-zh" data-lang="sc">4K AI 肠胃镜服务</div><p class="svc-desc" data-lang="en">4K AI imaging, monitored anaesthesia, polyp removal. Free 1-night accommodation + HZMB shuttle included.</p><p class="svc-desc" data-lang="hk">4K AI影像、監測麻醉及瘜肉切除。包免費一晚住宿及港珠澳口岸接送。</p><p class="svc-desc" data-lang="sc">4K AI影像、监测麻醉及息肉切除。包免费一晚住宿及港珠澳口岸接送。</p><span class="badge badge-pop" data-lang="en">Popular</span><span class="badge badge-pop" data-lang="hk">熱門</span><span class="badge badge-pop" data-lang="sc">热门</span></div>
         </div>
- 
+
         <div class="svc-card" data-cats="screening mature">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Screening · Silverline</div><div class="svc-cat-label" data-lang="hk">篩查 · Silverline 合作</div><div class="svc-cat-label" data-lang="sc">筛查 · Silverline 合作</div><div class="svc-title" data-lang="en">Brain & Stroke Risk Screening</div><div class="svc-title-zh" data-lang="hk">腦健康及中風風險篩查</div><div class="svc-title-zh" data-lang="sc">脑健康及中风风险筛查</div><p class="svc-desc" data-lang="en">Non-invasive. 7 conditions in one session: stroke, dementia, brain tumour, glaucoma, diabetes, hypertension. 90%+ accuracy.</p><p class="svc-desc" data-lang="hk">非入侵性。一次涵蓋七項：中風、認知障礙、腦腫瘤、青光眼、糖尿病、高血壓。準確率逾90%。</p><p class="svc-desc" data-lang="sc">非入侵性。一次涵盖七项：中风、认知障碍、脑肿瘤、青光眼、糖尿病、高血压。准确率逾90%。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="checkup prime mature">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Body Check · Hong Kong</div><div class="svc-cat-label" data-lang="hk">身體檢查 · 香港</div><div class="svc-cat-label" data-lang="sc">身体检查 · 香港</div><div class="svc-title" data-lang="en">HK Comprehensive Body Check</div><div class="svc-title-zh" data-lang="hk">香港全面健康檢查</div><div class="svc-title-zh" data-lang="sc">香港全面健康检查</div><p class="svc-desc" data-lang="en">Basic to comprehensive cancer screening packages. Professional follow-up when results need attention.</p><p class="svc-desc" data-lang="hk">由基本至全面癌症篩查套餐，報告異常時提供專業跟進。</p><p class="svc-desc" data-lang="sc">由基本至全面癌症筛查套餐，报告异常时提供专业跟进。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="checkup crossborder mature">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1529307474719-3d0a417aaf8e?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Medical Tourism · Zhongshan</div><div class="svc-cat-label" data-lang="hk">醫療旅遊 · 中山</div><div class="svc-cat-label" data-lang="sc">医疗旅游 · 中山</div><div class="svc-title" data-lang="en">Cardiovascular Health Tour</div><div class="svc-title-zh" data-lang="hk">心臟健康之旅</div><div class="svc-title-zh" data-lang="sc">心脏健康之旅</div><p class="svc-desc" data-lang="en">2-day Zhongshan tour: CTCA + brain CT + carotid ultrasound at Chen Xinghai Hospital, 4-star hotel, cultural programme. From HK$3,980.</p><p class="svc-desc" data-lang="hk">中山兩天行：陳星海醫院心血管篩查 + 四星酒店 + 文化觀光。低至港幣$3,980。</p><p class="svc-desc" data-lang="sc">中山两天行：陈星海医院心血管筛查 + 四星酒店 + 文化观光。低至港币$3,980。</p><span class="badge badge-new" data-lang="en">New</span><span class="badge badge-new" data-lang="hk">新推出</span><span class="badge badge-new" data-lang="sc">新推出</span></div>
         </div>
- 
+
         <div class="svc-card" data-cats="referral prime mature golden">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Referral · HK, Macau & Mainland</div><div class="svc-cat-label" data-lang="hk">轉介 · 港澳及內地</div><div class="svc-cat-label" data-lang="sc">转介 · 港澳及内地</div><div class="svc-title" data-lang="en">Precision Medical Referral</div><div class="svc-title-zh" data-lang="hk">精準醫療轉介</div><div class="svc-title-zh" data-lang="sc">精准医疗转介</div><p class="svc-desc" data-lang="en">80+ partner doctors. Matched by condition, subspecialty, and location. Cardiothoracic, oncology, orthopaedics, and more.</p><p class="svc-desc" data-lang="hk">80+合作醫生，按病情、亞專科及地點配對，涵蓋心胸、腫瘤、骨科等。</p><p class="svc-desc" data-lang="sc">80+合作医生，按病情、亚专科及地点配对，涵盖心胸、肿瘤、骨科等。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="referral crossborder prime mature golden">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Care · Accompaniment</div><div class="svc-cat-label" data-lang="hk">護理 · 陪診</div><div class="svc-cat-label" data-lang="sc">护理 · 陪诊</div><div class="svc-title" data-lang="en">Caring & Accompaniment</div><div class="svc-title-zh" data-lang="hk">陪診 · 心靈輔導 · 術後關懷</div><div class="svc-title-zh" data-lang="sc">陪诊 · 心灵辅导 · 术后关怀</div><p class="svc-desc" data-lang="en">Physical accompaniment, emotional counselling (心靈輔導), post-operative care, and herbal recovery (養生湯包).</p><p class="svc-desc" data-lang="hk">親身陪診、心靈輔導、術後關懷及養生湯包——因為關懷不止於醫學。</p><p class="svc-desc" data-lang="sc">亲身陪诊、心灵辅导、术后关怀及养生汤包——因为关怀不止于医学。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="crossborder prime mature golden">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Cross-Border · GBA</div><div class="svc-cat-label" data-lang="hk">跨境 · 大灣區</div><div class="svc-cat-label" data-lang="sc">跨境 · 大湾区</div><div class="svc-title" data-lang="en">Cross-Border Medical Arrangement</div><div class="svc-title-zh" data-lang="hk">跨境醫療安排</div><div class="svc-title-zh" data-lang="sc">跨境医疗安排</div><p class="svc-desc" data-lang="en">HK, Macau, Guangzhou, Foshan, Zhongshan, Dongguan, Shenzhen, Zhuhai. Appointments, accompaniment, transport, 藥械通.</p><p class="svc-desc" data-lang="hk">香港、澳門、廣州、佛山、中山、東莞、深圳、珠海。預約、陪診、交通及藥械通。</p><p class="svc-desc" data-lang="sc">香港、澳门、广州、佛山、中山、东莞、深圳、珠海。预约、陪诊、交通及药械通。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="children">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Children · Silver Orchid Hospital</div><div class="svc-cat-label" data-lang="hk">兒童 · 銀葵醫院</div><div class="svc-cat-label" data-lang="sc">儿童 · 银葵医院</div><div class="svc-title" data-lang="en">SEN Children's Programme</div><div class="svc-title-zh" data-lang="hk">SEN兒童發展支援</div><div class="svc-title-zh" data-lang="sc">SEN儿童发展支援</div><p class="svc-desc" data-lang="en">Ages 2–17. GI nutrition intervention (6 months) + play therapy (3 months). Silver Orchid Hospital, Macau.</p><p class="svc-desc" data-lang="hk">2–17歲。腸道營養介入（6個月）+ 遊戲治療（3個月）。澳門銀葵醫院。</p><p class="svc-desc" data-lang="sc">2–17岁。肠道营养介入（6个月）+ 游戏治疗（3个月）。澳门银葵医院。</p><span class="badge badge-pilot" data-lang="en">Pilot</span><span class="badge badge-pilot" data-lang="hk">試點</span><span class="badge badge-pilot" data-lang="sc">试点</span></div>
         </div>
- 
+
         <div class="svc-card" data-cats="wellness mature golden">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Health Products</div><div class="svc-cat-label" data-lang="hk">健康產品</div><div class="svc-cat-label" data-lang="sc">健康产品</div><div class="svc-title" data-lang="en">Herbap Matrix & Crocodile Bone Peptide</div><div class="svc-title-zh" data-lang="hk">康疤適 · 鱷骨肽</div><div class="svc-title-zh" data-lang="sc">康疤适 · 鳄骨肽</div><p class="svc-desc" data-lang="en">Clinically proven. Herbap Matrix: award-winning scar repair, used in 80%+ HK private hospitals. Crocodile Bone Peptide: 95.1% knee pain improvement.</p><p class="svc-desc" data-lang="hk">臨床實證。康疤適：獲獎疤痕修復，逾80%香港私家醫院使用。鱷骨肽：膝關節疼痛改善率95.1%。</p><p class="svc-desc" data-lang="sc">临床实证。康疤适：获奖疤痕修复，逾80%香港私家医院使用。鳄骨肽：膝关节疼痛改善率95.1%。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="wellness mature golden">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1559181567-c3190bded461?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Wellness · Chinese Medicine</div><div class="svc-cat-label" data-lang="hk">養生 · 中醫</div><div class="svc-cat-label" data-lang="sc">养生 · 中医</div><div class="svc-title" data-lang="en">Chinese Medicine & Wellness</div><div class="svc-title-zh" data-lang="hk">中醫及養生服務</div><div class="svc-title-zh" data-lang="sc">中医及养生服务</div><p class="svc-desc" data-lang="en">TCM referral and wellness coordination across HK, Macau, and Guangdong. Integrated with conventional medical care.</p><p class="svc-desc" data-lang="hk">橫跨港澳粵的中醫轉介及養生統籌，與西醫結合，全面管理健康。</p><p class="svc-desc" data-lang="sc">横跨港澳粤的中医转介及养生统筹，与西医结合，全面管理健康。</p></div>
         </div>
- 
+
         <div class="svc-card" data-cats="referral golden">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Golden Years</div><div class="svc-cat-label" data-lang="hk">銀髮服務</div><div class="svc-cat-label" data-lang="sc">银发服务</div><div class="svc-title" data-lang="en">Golden Years Services</div><div class="svc-title-zh" data-lang="hk">銀髮綜合服務</div><div class="svc-title-zh" data-lang="sc">银发综合服务</div><p class="svc-desc" data-lang="en">Medical referral, north-bound retirement support, accompaniment, and emotional care for seniors in the GBA.</p><p class="svc-desc" data-lang="hk">醫療轉介、北上養老、陪診及心靈關懷，協助長者安心在大灣區生活。</p><p class="svc-desc" data-lang="sc">医疗转介、北上养老、陪诊及心灵关怀，协助长者安心在大湾区生活。</p><span class="badge badge-soon" data-lang="en">Expanding</span><span class="badge badge-soon" data-lang="hk">持續擴展</span><span class="badge badge-soon" data-lang="sc">持续扩展</span></div>
         </div>
- 
+
         <div class="svc-card" data-cats="prime children">
           <div class="svc-card-img"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:190px;object-fit:cover" onload="imgLoaded(this)"></div>
           <div class="svc-card-body"><div class="svc-cat-label" data-lang="en">Maternity · Pre-pregnancy</div><div class="svc-cat-label" data-lang="hk">孕前 · 產後</div><div class="svc-cat-label" data-lang="sc">孕前 · 产后</div><div class="svc-title" data-lang="en">Pre-pregnancy, IVF & After-Pregnancy Care</div><div class="svc-title-zh" data-lang="hk">孕前檢查、試管嬰兒及產後護理</div><div class="svc-title-zh" data-lang="sc">孕前检查、试管婴儿及产后护理</div><p class="svc-desc" data-lang="en">Fertility check-up, IVF referral across HK and Mainland, and post-pregnancy care coordination.</p><p class="svc-desc" data-lang="hk">生育能力評估、港內地試管嬰兒轉介及產後護理統籌。</p><p class="svc-desc" data-lang="sc">生育能力评估、港内地试管婴儿转介及产后护理统筹。</p></div>
         </div>
- 
+
       </div>
     </div>
   </div>
 </div><!-- /services -->
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: CROSS-BORDER
 ════════════════════════════════════════ -->
@@ -1591,7 +1591,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
         </div>
       </div>
     </div>
- 
+
     <div class="cb-services">
       <div style="max-width:1100px;margin:0 auto">
         <div class="eyebrow" data-lang="en">Cross-Border Services</div><div class="eyebrow" data-lang="hk">跨境服務詳情</div><div class="eyebrow" data-lang="sc">跨境服务详情</div>
@@ -1606,14 +1606,14 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
         </div>
       </div>
     </div>
- 
+
     <div class="strip-4">
       <div class="strip-card"><div class="ps" id="ph-cb1"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:240px;object-fit:cover;display:block" onload="imgLoaded(this,'ph-cb1')"></div><div class="strip-ov"></div><div class="strip-label"><div class="strip-t" data-lang="en">HK Consultation</div><div class="strip-tz" data-lang="hk">香港醫生問診</div><div class="strip-tz" data-lang="sc">香港医生问诊</div></div></div>
       <div class="strip-card"><div class="ps" id="ph-cb2"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:240px;object-fit:cover;display:block" onload="imgLoaded(this,'ph-cb2')"></div><div class="strip-ov"></div><div class="strip-label"><div class="strip-t" data-lang="en">藥械通</div><div class="strip-tz" data-lang="hk">藥械通服務</div><div class="strip-tz" data-lang="sc">药械通服务</div></div></div>
       <div class="strip-card"><div class="ps" id="ph-cb3"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:240px;object-fit:cover;display:block" onload="imgLoaded(this,'ph-cb3')"></div><div class="strip-ov"></div><div class="strip-label"><div class="strip-t" data-lang="en">Accompaniment</div><div class="strip-tz" data-lang="hk">陪診服務</div><div class="strip-tz" data-lang="sc">陪诊服务</div></div></div>
       <div class="strip-card"><div class="ps" id="ph-cb4"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="20"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:240px;object-fit:cover;display:block" onload="imgLoaded(this,'ph-cb4')"></div><div class="strip-ov"></div><div class="strip-label"><div class="strip-t" data-lang="en">Medical Transport</div><div class="strip-tz" data-lang="hk">醫療交通</div><div class="strip-tz" data-lang="sc">医疗交通</div></div></div>
     </div>
- 
+
     <div style="position:relative;overflow:hidden">
       <div class="ps" id="ph-cb-cta"><div class="spin"><svg viewBox="0 0 24 24" fill="none" stroke="#1B4F72" stroke-width="2" width="26"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1800&q=80&fit=crop" alt="" style="opacity:0;width:100%;height:360px;object-fit:cover;display:block" onload="imgLoaded(this,'ph-cb-cta')"></div>
       <div class="home-cta-ov"></div>
@@ -1626,8 +1626,8 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     </div>
   </div>
 </div><!-- /crossborder -->
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: FOR YOUR FAMILY
 ════════════════════════════════════════ -->
@@ -1642,7 +1642,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       <div class="ph-title-zh" data-lang="sc">照顾家人，<br>不应是您独自承担的事。</div>
     </div>
   </div>
- 
+
   <div class="family-intro">
     <div style="max-width:1100px;margin:0 auto">
       <div class="family-split">
@@ -1670,7 +1670,7 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
       </div>
     </div>
   </div>
- 
+
   <div class="family-stat">
     <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px" data-lang="en">BASED ON CLIENT FEEDBACK</div>
     <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px" data-lang="hk">根據客戶反饋</div>
@@ -1681,8 +1681,8 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     <p class="fstat-desc" data-lang="sc">的家属表示，在与恩诺全护合作后，对家人的医疗护理更有信心。</p>
   </div>
 </div><!-- /family -->
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: ABOUT
 ════════════════════════════════════════ -->
@@ -1736,8 +1736,8 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     <div class="nb"><div class="nb-n">Est. 2025</div><div class="nb-l" data-lang="en">Founded</div><div class="nb-l" data-lang="hk">成立年份</div><div class="nb-l" data-lang="sc">成立年份</div></div>
   </div>
 </div><!-- /about -->
- 
- 
+
+
 <!-- ════════════════════════════════════════
      PAGE: CONTACT
 ════════════════════════════════════════ -->
@@ -1777,8 +1777,8 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     </div>
   </div>
 </div><!-- /contact -->
- 
- 
+
+
 <!-- ════════════════ FOOTER ════════════════ -->
 <footer>
   <div class="footer-top">
@@ -1823,8 +1823,8 @@ footer { background: var(--ink); padding: 60px 7% 32px; }
     <div class="footer-copy">© 2026 Gracewell Integrated Care 恩諾全護. All rights reserved.</div>
   </div>
 </footer>
- 
- 
+
+
 <script>
 // ── PAGE ROUTER ──
 function showPage(id) {
@@ -1832,7 +1832,7 @@ function showPage(id) {
   const t = document.getElementById('page-' + id);
   if (t) { t.classList.add('active'); window.scrollTo({top:0,behavior:'smooth'}); }
 }
- 
+
 // ── LANGUAGE ──
 function setLang(lang) {
   document.body.className = document.body.className.replace(/lang-\w+/g,'').trim() + ' lang-' + lang;
@@ -1840,14 +1840,14 @@ function setLang(lang) {
   document.getElementById('btn-' + lang).classList.add('active');
   document.documentElement.lang = {en:'en',hk:'zh-HK',sc:'zh-CN'}[lang];
 }
- 
+
 // ── IMAGE LOADED ──
 function imgLoaded(img, slotId) {
   img.style.opacity = '1';
   const slot = slotId ? document.getElementById(slotId) : img.closest('.ps') || img.closest('.story-card-photo') || img.parentElement;
   if (slot) slot.classList.add('rdy');
 }
- 
+
 // ── LIFE STAGE → SERVICES ──
 function filterStage(stage, el) {
   showPage('services');
@@ -1858,7 +1858,7 @@ function filterStage(stage, el) {
     if (btn) switchCat(cat, btn);
   }, 80);
 }
- 
+
 // ── SERVICE CATEGORY TABS ──
 function switchCat(cat, btn) {
   document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
@@ -1868,7 +1868,7 @@ function switchCat(cat, btn) {
     c.style.display = (cat === 'all' || cats.includes(cat)) ? '' : 'none';
   });
 }
- 
+
 // ── INDIVIDUAL STORY PAGES ──
 const STORIES = {
   'mrs-chan': {
@@ -1902,20 +1902,20 @@ const STORIES = {
     body_sc: `<h3>一个家庭为八岁儿子寻找答案。</h3><p>杰森八岁时，父母第一次注意到他正在挣扎——在学校、在家、睡眠、饮食。他的老师形容他「难相处」。他的儿科医生做了标准测试，没有找到确定性的结果，建议采取观望态度。他的父母，两位在香港工作的专业人士，已经等待了两年。</p><p>他们来到恩诺全护时，甚至不确定儿子的情况属于哪个类别。恩诺全护的团队仔细倾听，询问了杰森的饮食、睡眠模式、一天中不同时段的行为，并建议了两项具体评估：肠道微生物测试，以及转介给一位有SEN案例经验的发展儿科医生。</p><h3>一条他们从未知晓的出路。</h3><p>微生物组结果显示肠道菌群失衡明显。杰森通过恩诺全护网络协调的六个月营养介入计划，同时在澳门银葵医院接受了三个月的游戏治疗。到第四个月，父母描述了一个截然不同的孩子——更平静，更投入，整夜安睡。</p><p>「我们被告知没有什么问题，」他的母亲说，「恩诺全护不只是找到了问题所在——他们找到了一条我们从未知晓的出路。」</p>`,
   }
 };
- 
+
 function showStory(id) {
   const s = STORIES[id];
   if (!s) return;
- 
+
   // detect lang
   let lang = 'hk';
   if (document.body.classList.contains('lang-en')) lang = 'en';
   if (document.body.classList.contains('lang-sc')) lang = 'sc';
- 
+
   const name = s['name_' + lang];
   const pull = s['pull_' + lang];
   const body = s['body_' + lang];
- 
+
   document.getElementById('story-content').innerHTML = `
     <div class="story-back" onclick="showPage('stories')">← <span data-lang="en" style="display:inline">Back to Stories</span><span data-lang="hk" style="display:${lang==='hk'?'inline':'none'}">返回故事列表</span><span data-lang="sc" style="display:${lang==='sc'?'inline':'none'}">返回故事列表</span></div>
     <div class="story-article-photo"><img src="${s.photo}" alt="${name}" style="width:100%;height:420px;object-fit:cover;display:block"></div>
@@ -1938,7 +1938,7 @@ function showStory(id) {
   `;
   showPage('story-detail');
 }
- 
+
 // Init
 document.getElementById('btn-hk').classList.add('active');
 </script>
